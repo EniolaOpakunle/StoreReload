@@ -1,38 +1,310 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+header{
+  width: 1,440px;
+  height: 118px;
+  padding: 16px 100px 16px 100px;
+  border-bottom: 1px solid var(--textColor);
+  /* gap: 8px; */
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-color: var(--mainColor);
+  justify-content: space-around;
+  /* position: sticky; */
+  top: 0; 
+  z-index: -1;
+  /* background-color: #fff; */
+  /* offset: 100; */
+  /* position: fixed; */
+  /* z-index: -1; */
+}
+.logo{
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 48px;
+}
+nav{
+  display: flex;
+  /* align-items: center; */
+  /* justify-content: space-around !important; */
+}
+.nav-link{
+  color: var(--textColor);
+  font-size: 18px;
+  margin: 0px 40px 0px 40px;
+  position: relative;
+  padding: 0 10px;
+}
+.nav-link::after{
+  width: 0;
+  background-color: black;
+  height: 3px;
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.3s;
+  
+}
+.nav-link:hover:after{
+  width: 100%;
+}
+.nav-btn{
+  background-color: var(--SecondaryColor);
+  color: var(--textColor);
+  padding: 10px 6px 10px;
+  border-radius: 5px;
+}
+.main-container{
+  /* background-color: var(--SecondaryColor); */
+  padding-top: 50px;
+  padding-bottom: 100px;
+  width:100%;
+  margin: auto;
+  /* width: 1240px; */
+}
+.main-div1{
+  width: 1200px ;
+  /* width: 80; */
+  margin: auto;
+  /* margin-top: 62px; */
+  /* margin-bottom: 100px; */
+}
+.main-text1{
+  font-size: 64px;
+  font-weight:600;
+  letter-spacing: 2px;
+  line-height: 96px;
+  color: rgba(42, 42, 42, 1);
+  font: Clash Grotesk;
+}
+.main-text2{
+  font: Amulya;
+  font-size: 24px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin-top: 30px;
+  margin-bottom: 70px;
+  /* padding: 8px; */
+  line-height: 36px;
+}
+.main-div2{
+  margin-right: 80px;
+}
+.big-frame{
+  width: 589px;
+  height: 615px;
+}
+.img-link{
+  width: 186px;
+  height: 54px;
+}
+.display-container{
+  /* height: 199px; */
+  width: 100%;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 1);
+  /* padding: 20px 0 20px 0; */
+}
+.display-div{
+  height: 199px;
+  width:1120px;
+  align-items: center;
+  /* justify-content: center; */
+  justify-content: space-between;
+  margin: auto;
+}
+.who-container{
+  position: relative;
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+.who-name, .what-name{
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 48px;
+  color: rgba(42, 42, 42, 1);
+  margin-bottom: 30px;
+}
+.who-div1{
+  width: 1200px;
+  margin: auto;
+}
+.who-card-div , .what-card-div{
+  justify-content: space-between;
+  /* z-index: -1; */
+}
+.who-image{
+  width: 51px;
+  height: 51px;
+  margin-top: 27px;
+}
+.who-title, .what-title{
+  font-size: 22px;
+  font-weight: 500;
+  margin-top: 10px;
+}
+.what-title{
+  margin-left: 15px;
+}
+.who-card{
+  width: 383px;
+  height: 329px;
+  align-items: center;
+  /* padding: 0 5px 0 5px; */
+}
+.who-description, .what-description{
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: 0.691px;
+}
+.what-container{
+  padding-bottom: 100px;
+}
+.what-description{
+  margin-left: 15px;
+}
+.what-div1{
+  width: 1240px;
+  margin: auto;
+}
+.what-subname, .shop-subname{
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  margin-bottom: 30px;
+}
+.what-image{
+  width: 392px;
+  height: 400px;
+}
+.what-card{
+  height: 634px;
+  width: 392px;
+}
+.shop-container{
+  padding-top: 70px;
+  width: 100%;
+  background-color: var(--SecondaryColor);
   color: white;
+  padding-bottom: 100px;
 }
-
-.App-link {
-  color: #61dafb;
+.shop-name{
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 48px;
 }
+.shop-subname{
+  width: 931px;
+  padding: 8px;
+  margin: auto;
+}
+.shop-btn{
+  padding: 10px 6px 10px;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 1);
+  color: rgba(0, 27, 46, 1);
+  border: 1px solid rgba(255, 255, 255, 1);
+  margin: auto;
+  /* text-align: center; */
+  display: flex;
+  justify-content: center;
+}
+.shop-card{
+  height: 350px;
+  width: 400px;
+  height: 298px;
+}
+.shop-image{
+  width: 400px;
+  height: 298px;
+  margin: auto;
+}
+.shop-div2{
+  width: 1240px;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+  margin-top: 20px;
+}
+.shop-title{
+  /* color: rgba(255, 255, 255, 1); */
+  color: dark;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 48px;
+}
+.shop-div3, .shop-div4{
+  width: 1240px;
+  justify-content: space-between;
+  margin: auto;
+}
+#shop-div2{
+  margin-top: 50px;
+}
+.shop-div4{
+  margin-top: 80px;
+}
+.category-title{
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 36px;
+}
+.seeAll{
+  text-decoration: none;
+  color: rgba(255, 255, 255, 1);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+}
+.go-container{
+  padding-top: 50px;
+  padding-bottom: 100px;
+  width: 100%;
+  margin: auto;
+}
+.go-div1{
+  width: 1240px;
+  margin: auto;
+  justify-content: space-between;
+  /* margin-top: 30px; */
+  /* padding-top: 30px; */
+}
+.go-div3{
+  margin-top: 40px;
+}
+.go-div2{
+  display: flex;
+  justify-content: center;
+}
+.download-container{
+  background-color: rgba(255, 239, 211, 0.16);
+}
+.download-div1{
+  justify-content: center;
+  width: 1240px ;
+  /* margin-left: 30px; */
+  margin: auto;
+}
+.download-div2{
+  margin-top: 120px;
+}
+.download-maintext{
+  color: rgba(42, 42, 42, 1);
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 96px;
+}
+.phoneimage1{
+  height: 800.7px;
+  width: 500.14px;
+  /* z-index: 1; */
+  margin-right: -600px;
+  margin-left: 200px;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+.phoneimage2{
+  height: 800.7px;
+  width: 500.14px;
+  /* margin-left:100px; */
 }
