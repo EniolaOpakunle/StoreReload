@@ -7,6 +7,8 @@ import WhatWeOffer from '../components/WhatWeOffer';
 import ShopWithUs from '../components/ShopWithUs';
 import GoCashless from '../components/GoCashless';
 import Download from '../components/Download';
+import Fag from '../components/Fag';
+import Footer from '../components/Footer';
 
 export default function LandingPage() {
   return (
@@ -19,6 +21,8 @@ export default function LandingPage() {
         <ShopWithUs/>
         <GoCashless/>
         <Download/>
+        <Fag/>
+        <Footer/>
     </section>
   )
 }

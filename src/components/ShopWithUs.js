@@ -15,7 +15,7 @@ export default function ShopWithUs() {
         <div className='shop-div1'>
             <p className='text-center shop-name'> SHOP WITH US</p>
             <p className='text-center shop-subname'>Stock up your shops easily with consumer products and medical supplies from the comfort of you space. </p>
-            <button className='shop-btn'>
+            <button className='shop-btn my-3'>
                 Download App for Free
             </button>
             <div className='d-flex shop-div3'>

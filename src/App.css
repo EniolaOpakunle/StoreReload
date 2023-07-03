@@ -46,6 +46,7 @@ nav{
 }
 .nav-link:hover:after{
   width: 100%;
+  color: rgba(255, 255, 255, 1);
 }
 .nav-btn{
   background-color: var(--SecondaryColor);
@@ -90,8 +91,8 @@ nav{
   margin-right: 80px;
 }
 .big-frame{
-  width: 589px;
-  height: 615px;
+  width: 550px;
+  height: 580px;
 }
 .img-link{
   width: 186px;
@@ -230,7 +231,7 @@ nav{
 .shop-title{
   /* color: rgba(255, 255, 255, 1); */
   color: dark;
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 500;
   line-height: 48px;
 }
@@ -307,4 +308,79 @@ nav{
   height: 800.7px;
   width: 500.14px;
   /* margin-left:100px; */
+}
+.footer-container{
+  background-color: var(--SecondaryColor);
+  padding-top: 50px;
+  color: rgba(255, 255, 255, 0.80);
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 400;
+  padding-bottom: 50px;
+}
+.footer-div1{
+  width: 90%;
+  margin: auto;
+}
+.footer-div2{
+  justify-content: space-between;
+}
+.footer-nav{
+  display: block;
+}
+.footer-navLink{
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 400;
+}
+.footer-navLink:hover{
+  color: white;
+}
+.footer-navLink::after{
+  background-color: white;
+}
+.media-image{
+  width: 24px;
+  height: 24px;
+}
+.media-div{
+  width: 90px;
+  height: 90px;
+  border-radius: 90px;
+  background-color: rgba(255, 255, 255, 0.16);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo-img{
+  width: 64px;
+  height: 64px;
+}
+.copyright{
+  text-align: end;
+  margin-top: -85px;
+}
+.dropdown-toggle{
+  width: 600px;
+  height: 120px;
+  text-align: start;
+  /* padding: 5px; */
+}
+.fag-container{
+  padding-top:50px ;
+  width: 90%;
+  margin: auto;
+  padding-bottom: 50px;
+}
+.fag-div1{
+  display: flex;
+  /* align-items: flex-start; */
+  justify-content: center;
+  gap: 48px;
+  /* flex-direction: ; */
+}
+.dropdown-toggle{
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 36px;
 }
