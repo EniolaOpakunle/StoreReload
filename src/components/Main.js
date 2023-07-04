@@ -17,8 +17,8 @@ export default function Main() {
                     <a href='' className='mx-5'><img src={frame8} className='img-link'/></a>
                 </div>
             </div>
-            <div className=''>
-            <img src={frame10}  className=' big-frame'/>
+            <div className='main-div3'>
+              <img src={frame10}  className=' big-frame'/>
             </div>
         </div>    
     </section>

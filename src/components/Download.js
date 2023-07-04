@@ -6,7 +6,7 @@ import phoneImage2 from '../Images/Group 59.png'
 
 export default function Download() {
   return (
-    <section className='download-container'>
+    <section className='download-container w-100'>
         <div className='download-div1 d-flex'>
             <div className='w-50 download-div2'>
                 <p className='download-maintext text-left'>Download App</p>
