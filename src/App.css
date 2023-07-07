@@ -318,7 +318,7 @@ header{
   padding-bottom: 50px;
 }
 .footer-div1{
-  width: 90%;
+  width: 80%;
   margin: auto;
 }
 .footer-div2{
@@ -380,4 +380,30 @@ header{
   font-size: 24px;
   font-weight: 500;
   line-height: 36px;
+}
+
+.policy-container{
+  width: 100%;
+}
+.policy-div1{
+  width: 80%;
+  margin: auto;
+  margin-bottom: 150px;
+}
+.policy-text{
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+}
+.policy-title{
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 48px;
+}
+.policy-divs{
+  margin-top: 80px;
+}
+
+@media screen and (max-width: 1024px) {
+  
 }

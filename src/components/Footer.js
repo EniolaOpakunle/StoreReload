@@ -55,10 +55,10 @@ export default function Footer() {
                     </div>
                 </div>
                     <div>
-                        <Link className='nav-link footer-navLink'>Terms of service</Link>
+                        <Link className='nav-link footer-navLink' to='/termsofservice'>Terms of service</Link>
                     </div>
                     <div>
-                        <Link className='nav-link footer-navLink'>Privacy Policy</Link>
+                        <Link className='nav-link footer-navLink' to= '/privacypolicy'>Privacy Policy</Link>
                     </div>
             </div>
             <div className='text-light copyright'> 
