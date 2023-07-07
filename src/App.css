@@ -133,7 +133,6 @@ header{
 }
 .who-card-div , .what-card-div{
   justify-content: space-between;
-  /* z-index: -1; */
 }
 .who-image{
   width: 51px;
