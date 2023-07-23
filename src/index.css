@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  width: 100%;
 }
 
 code {
@@ -15,5 +16,7 @@ code {
   --mainColor: #ffff;
   --SecondaryColor:rgba(0, 27, 46, 1);
   --textColor: rgba(204, 204, 204, 1);
+  --bigFontSize: 40px;
+  --bigFontWeight: 500; 
   ;
 }
