@@ -9,6 +9,7 @@ import SignIn from './Pages/SignIn';
 import ForgotPassword from './Pages/ForgotPassword';
 import ResetPassword from './Pages/ResetPassword';
 import ForgotPasswordResponse from './Pages/ForgotPasswordResponse';
+import Dashboard from './Pages/Dashboard';
 function App() {
   return (
     <Routes>
@@ -26,6 +27,7 @@ function App() {
       <Route path='/forgotpassword' element = {<ForgotPassword/>}/>
       <Route path='/response' element = {<ForgotPasswordResponse/>}/>
       <Route path='/resetpassword' element = {<ResetPassword/>}/>
+      <Route path='/dashboard' element = {<Dashboard/>}/>
     </Routes>
   );
 }
