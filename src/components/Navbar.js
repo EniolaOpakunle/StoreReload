@@ -4,10 +4,9 @@ import logo from '../Images/image 10.png'
 export default function Navbar() {
   return (
     
-    <header className='w-100'>
-        <nav class="navbar navbar-expand-lg">
+    <header className='fixed-top w-100'>
+        <nav class="navbar navbar-expand-lg container">
         <div class="container-fluid">
-          {/* <a class="navbar-brand logo" href="#">StoreReload</a> */}
           <Link className='d-flex logo-div navbar-brand'>
                 <img src={logo} className='logo-image'/>
                 <p className='logo text-dark'>StoreReload</p>

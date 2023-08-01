@@ -10,7 +10,7 @@ import twitter from '../Images/uit_twitter-alt.png'
 export default function Footer() {
   return (
     <section className='footer-container'>
-        <div className='footer-div1'>
+        <div className='container m-auto'>
             <div className='d-flex footer-div2'>
                 <div className=''>
                     <div className='d-flex'>

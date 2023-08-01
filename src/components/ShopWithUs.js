@@ -11,64 +11,64 @@ import drug3 from '../Images/Rectangle 384.png'
 
 export default function ShopWithUs() {
   return (
-    <section className='shop-container'>
-        <div className='shop-div1'>
+    <section className='w-100 shop-container'>
+        <div className='container'>
             <p className='text-center shop-name'> SHOP WITH US</p>
             <p className='text-center shop-subname'>Stock up your shops easily with consumer products and medical supplies from the comfort of you space. </p>
             <button className='shop-btn my-3'>
                 Download App for Free
             </button>
-            <div className='d-flex shop-div3'>
+            <div className='d-flex justify-content-space-between'>
                 <p className='category-title'>Consumer Products</p>
                 <p>
                     <a href='' className='seeAll'>See All</a>
                 </p>
             </div>
-            <div className='d-flex shop-div2'>
-                <div className='card shop-card'>
-                    <img src={milo} className='shop-image'/>
+            <div className='row'>
+                <div className='card shop-card col-lg-4'>
+                    <img src={milo} className='card-img'/>
                     <p className='card-title shop-title'>Milo</p>
                 </div>
-                <div className='card shop-card'>
-                    <img src={cowbell} className='shop-image'/>
+                <div className='card shop-card col-lg-4'>
+                    <img src={cowbell} className='card-img'/>
                     <p className='card-title shop-title'>Cowbell</p>
                 </div>
-                <div className='card shop-card'>
-                    <img src={pampers} className='shop-image'/>
+                <div className='card shop-card col-lg-4'>
+                    <img src={pampers} className='card-img'/>
                     <p className='card-title shop-title'>Pampers</p>
                 </div>
-            </div>
-            <div className='d-flex shop-div2' id='shop-div2'>
-                <div className='card shop-card'>
-                    <img src={spaghetti} className='shop-image'/>
+            {/* </div> */}
+            {/* <div className='d-flex shop-div2' id='shop-div2'> */}
+                <div className='card shop-card  col-lg-4'>
+                    <img src={spaghetti} className='card-img'/>
                     <p className='card-title shop-title'>Spaghetti</p>
                 </div>
-                <div className='card shop-card'>
-                    <img src={bournvita} className='shop-image'/>
+                <div className='card shop-card col-lg-4'>
+                    <img src={bournvita} className='card-img'/>
                     <p className='card-title shop-title'>Bournvita</p>
                 </div>
-                <div className='card shop-card'>
-                    <img src={caprisun} className='shop-image'/>
+                <div className='card shop-card col-lg-4'>
+                    <img src={caprisun} className='card-img'/>
                     <p className='card-title shop-title'>Capri Sun</p>
                 </div>
-            </div>
-            <div className='d-flex shop-div4'>
+            {/* </div> */}
+            <div className='d-flex justify-content-space-between'>
                 <p className='category-title'>Medical Supplies</p>
                 <p>
                     <a href='' className='seeAll'>See All</a>
                 </p>
             </div>
-            <div className='d-flex shop-div2' id='shop-div2'>
-                <div className='card shop-card'>
-                    <img src={drug1} className='shop-image'/>
+            {/* <div className='d-flex shop-div2' id='shop-div2'> */}
+                <div className='card shop-card col-lg-4 col-md-6'>
+                    <img src={drug1} className='card-img'/>
                     <p className='card-title shop-title'>Paludrine</p>
                 </div>
-                <div className='card shop-card'>
-                    <img src={drug2} className='shop-image'/>
+                <div className='card shop-card col-lg-4 col-md-6'>
+                    <img src={drug2} className='card-img'/>
                     <p className='card-title shop-title'>Lariam</p>
                 </div>
-                <div className='card shop-card'>
-                    <img src={drug3} className='shop-image'/>
+                <div className='card shop-card col-lg-4 col-md-6'>
+                    <img src={drug3} className='card-img'/>
                     <p className='card-title shop-title'>Falcigo</p>
                 </div>
             </div>

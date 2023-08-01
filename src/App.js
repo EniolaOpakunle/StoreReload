@@ -1,6 +1,6 @@
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
-// import Navbar from './Components/Navbar';
+import { GoogleOAuthProvider } from '@react-oauth/google';
 import LandingPage from './Pages/LandingPage';
 import PrivacyPolicy from './Pages/PrivacyPolicy';
 import TermsOfService from './Pages/TermsOfService';
@@ -15,9 +15,14 @@ function App() {
       <Route path='/' element= {<LandingPage/>}/>
       <Route path='/privacypolicy' element= {<PrivacyPolicy/>}/>
       <Route path='/termsofservice' element= {<TermsOfService/>}/>
-      {/* <Route path='/dashboard'/> */}
       <Route path='/signin' element= {<SignIn/>}/>
-      <Route path='/signup' element = {<SignUp/>}/>
+      <Route 
+        path='/signup' 
+        element = {
+        <GoogleOAuthProvider clientId="693659129125-si3ujerr1jtp0qnthcd0784n1ufj2e41.apps.googleusercontent.com">
+          <SignUp/>
+        </GoogleOAuthProvider>}
+      />
       <Route path='/forgotpassword' element = {<ForgotPassword/>}/>
       <Route path='/response' element = {<ForgotPasswordResponse/>}/>
       <Route path='/resetpassword' element = {<ResetPassword/>}/>
