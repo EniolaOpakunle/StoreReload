@@ -1,11 +1,29 @@
 import React from 'react'
 import { useState , useEffect} from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import logo from '../Images/image 10.png'
 
 export default function SignIn() {
+    const navigate = useNavigate()
     const [email, setemail] = useState('')
     const [password, setpassword] = useState('')
+    const [allCustomers, setallCustomers] = useState([])
+    const [message, setmessage] = useState('')
+    useEffect(() => {
+        setallCustomers(JSON.parse(localStorage.allCustomers))
+        console.log(allCustomers)
+    }, [])
+    
+    const handleSubmit =(value) => {
+        let found = allCustomers.find(val => val.email == value.email && val.password == value.password)
+        if (found){
+            navigate('/dashboard')
+        }
+        else{
+            setmessage('Invalid email or password')
+        }
+    }
+
   return (
     <section>
         <header>
@@ -22,25 +40,26 @@ export default function SignIn() {
                 </div>
             </nav>
         </header>
-        <div className='w-50 signup-div1'>
+        <form className='w-50 signup-div1' onSubmit={() => handleSubmit({email, password})}>
             <h3 className='text-center signup-title'>Dashboard Sign In</h3>
-            <form className='form-group mt-4'>
+            <div className='form-group mt-4'>
                 <label className='mb-2'>Enter your email address</label >
                 <input 
                 className='form-control signup-input'
                 onChange={(e) => setemail(e.target.value)}
                 />
-            </form>
-            <form className='form-group mt-4'>
+            </div>
+            <div className='form-group mt-4'>
                 <label className='mb-2'>Enter your password <span className='text-end'>Minimum of 8 characters</span></label>
                 <input 
                 className='form-control signup-input'
                 onChange={(e) => setpassword(e.target.value)}
                 />
-            </form>
+            </div>
             <div className='mt-3'><Link to='/forgotpassword'>Forgot Password?</Link></div>
+            <div className='text-danger mt-2 text-center'>{message}</div>
             <button type='submit' className='btn form-control mt-5 nav-btn' >Sign In</button>
-        </div>
+        </form>
     </section>
   )
 }
